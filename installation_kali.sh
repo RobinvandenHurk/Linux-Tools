@@ -10,6 +10,7 @@ fi
 # Update the system
 apt-get update -y
 apt-get upgrade -y
+apt-get autoremove -y
 
 # ------------------ Install Sublime Text ------------------ #
 # Source: https://www.sublimetext.com/docs/3/linux_repositories.html
