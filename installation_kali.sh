@@ -18,11 +18,15 @@ apt-key add -
 apt-get install apt-transport-https
 echo "deb https://download.sublimetext.com/ apt/stable/"
 tee /etc/apt/sources.list.d/sublime-text.list
-sudo apt-get update -y
-sudo apt-get install sublime-text -y
+apt-get update -y
+apt-get install sublime-text -y
 
 
-# ------------------ Install Xclip ------------------ #
+# ------------------ Install simple modules ------------------ #
+apt-get install git
+
+
+# ------------------ Install xclip ------------------ #
 apt-get install xclip
 
 
