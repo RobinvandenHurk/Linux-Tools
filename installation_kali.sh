@@ -7,10 +7,13 @@ if [[ $EUID -ne 0 ]]; then
    exit 1
 fi
 
+# Install aptitude
+apt-get install aptitude -y
+
 # Update the system
-apt-get update -y
-apt-get upgrade -y
-# apt-get autoremove -y
+aptitude update -y
+aptitude upgrade -y
+aptitude autoremove -y
 
 # ------------------ Install Sublime Text ------------------ #
 # Source: https://www.sublimetext.com/docs/3/linux_repositories.html
@@ -19,16 +22,16 @@ apt-key add -
 apt-get install apt-transport-https
 echo "deb https://download.sublimetext.com/ apt/stable/"
 tee /etc/apt/sources.list.d/sublime-text.list
-apt-get update -y
-apt-get install sublime-text -y
+aptitude update -y
+aptitude install sublime-text -y
 
 
 # ------------------ Install simple modules ------------------ #
-apt-get install git
+aptitude install git
 
 
 # ------------------ Install xclip ------------------ #
-apt-get install xclip
+aptitude install xclip
 
 
 # ------------------ Install Python modules ------------------ #
