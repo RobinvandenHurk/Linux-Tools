@@ -7,9 +7,6 @@ if [[ $EUID -ne 0 ]]; then
    exit 1
 fi
 
-# Install aptitude
-apt-get install aptitude -y
-
 # Update the system
 apt-get update -y
 apt-get upgrade -y
