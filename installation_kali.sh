@@ -32,6 +32,7 @@ aptitude install git
 
 # ------------------ Install xclip ------------------ #
 aptitude install xclip
+echo 'alias "cs=xclip -selection clipboard"' >> ~/.bashrc
 
 
 # ------------------ Install Python modules ------------------ #
