@@ -30,6 +30,12 @@ apt-get install xclip
 echo 'alias "cs=xclip -selection clipboard"' >> ~/.bashrc
 
 
+# ------------------ Fix Metasploit ------------------ #
+cd /usr/share/metasploit-framework
+gem install bundler:1.17.3
+bundle install
+gem update --system
+
 # ------------------ Install Python modules ------------------ #
 pip install requests
 
