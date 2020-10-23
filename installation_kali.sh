@@ -22,7 +22,7 @@ sudo apt-get install sublime-text
 
 
 # ------------------ Install simple modules ------------------ #
-apt-get install git gobuster -y
+apt-get install git gobuster remmina -y
 
 
 # ------------------ Install xclip ------------------ #
