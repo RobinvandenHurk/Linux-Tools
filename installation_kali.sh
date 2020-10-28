@@ -22,12 +22,17 @@ sudo apt-get install sublime-text
 
 
 # ------------------ Install simple modules ------------------ #
-apt-get install git gobuster remmina -y
+sudo apt-get install git gobuster remmina -y
 
 
 # ------------------ Install xclip ------------------ #
 apt-get install xclip
 echo 'alias "cs=xclip -selection clipboard"' >> ~/.bashrc
+
+
+# ------------------ Install Nextcloud ------------------ #
+sudo add-apt-repository ppa:nextcloud-devs/client
+sudo apt install nextcloud-desktop
 
 
 # ------------------ Fix Metasploit ------------------ #
