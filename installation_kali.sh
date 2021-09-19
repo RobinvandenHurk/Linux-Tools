@@ -25,6 +25,10 @@ sudo apt-get install sublime-text
 sudo apt-get install git gobuster remmina -y
 
 
+# ------------------ Install Terminator ------------------ #
+sudo apt install terminator -y
+
+
 # ------------------ Install xclip ------------------ #
 apt-get install xclip
 echo 'alias "cs=xclip -selection clipboard"' >> ~/.bashrc
@@ -43,5 +47,3 @@ gem update --system
 
 # ------------------ Install Python modules ------------------ #
 pip install requests
-
-
